@@ -29,7 +29,7 @@ Header Work
 
 header {
   border-width: 5px;
-  border-color: limegreen;
+  background-color: limegreen;
 }
 
 header li {
@@ -47,6 +47,8 @@ header nav {
 header nav a {
   background-color: yellow;
   margin: 2em;
+
+  text-decoration: none;
 }
 
 header h1 {
@@ -62,37 +64,53 @@ section.banner {
  background-color: brown;
 }
 
-/*
-Main Text Work
-*/
 section.specials h2 {
   background-color: blue;
-  display: inline-block;
+  display: block;
+}
+section.specials p {
+  background-color: blue;
 }
 
-/*
-Location Section Work
-*/
+/*Menu*/
+section.menu-items h2 {
+  background-color: green;
+}
+
+section.menu-items p {
+  background-color: purple;
+}
+
+/*Hours*/
+section.hours h2 {
+  background-color: pink;
+}
+
+section.hours p {
+  background-color: yellow;
+}
+
+/*Location*/
 section.location h2 {
   background-color: red;
 }
 
-/*
-Feedback Section Work
-*/
+/*Feedback Section Work*/
 section.feedback {
   background-color: grey;
 }
 
-/*
-Footer Work
-*/
+/*Footer Work*/
 footer {
-
 }
-/*
-Responsive Design Implementations
-*/
+
+/*Images*/
+.banner-picture {
+  width: 40em;
+}
+
+
+/*Responsive Design Implementations (hamburger and hover)*/
 @media only screen and (min-width: 25em) {
 
   html {
