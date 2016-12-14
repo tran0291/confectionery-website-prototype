@@ -318,6 +318,33 @@ label img {
     font-size: 120%;
     line-height: 1.5;
   }
+  /*Banner*/
+  section.banner {
+    position: relative;
+  }
+
+  section.specials {
+    position: absolute;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50%;
+
+    background-color: #666;
+    text-decoration: none;
+
+    color: #fff;
+    padding: .5em .75em;
+    border-radius: 4px;
+    left: 11em;
+    top: 20em;
+  }
+
+  /*Menu*/
+  .menu-picture {
+    width: 10%;
+    float: none;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
