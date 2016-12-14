@@ -30,7 +30,6 @@ header {
   background-color: limegreen;
   text-align: center;
   margin: 0;
-
 }
 
 header h1 {
@@ -62,51 +61,17 @@ header nav a {
   border-radius: 4px;
 }
 
-/*Header Hover State*/
-header nav a:hover {
-  background-color: #000;
-}
-
-/*Toggle Hamburger*/
-header ul {
-  display: none;
-}
-.nav-check {
-  position: absolute;
-  top: -3em;
-}
-
-.nav-check:checked ~ ul {
-  display: block;
-}
-
-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-  display: inline-block;
-  width: 40px;
-}
-
-label img {
-  display: block;
-  width: 100%;
-}
-
-.nav-check:checked ~ label {
-  background-color: green;
-}
-
 /*Main Banner Work*/
 section.banner {
  background-color: brown;
- padding: 0;
+ padding: 1em 0;
  margin: 0;
 }
 
 section.specials {
   background-color: grey;
   margin: 0;
-  padding: 1 1em;
+  padding: 1em;
 }
 
 section.specials h2 {
@@ -117,7 +82,7 @@ section.specials p {
   background-color: blue;
 }
 
-/*Menu*/
+/*Menu Work*/
 section.menu {
   background-color: grey;
   padding: 0 1em;
@@ -131,7 +96,7 @@ section.menu p {
   background-color: purple;
 }
 
-/*Hours*/
+/*Hours Work*/
 section.hours {
   background-color: grey;
   padding: 1em;
@@ -145,22 +110,7 @@ section.hours p {
   background-color: red;
 }
 
-/*Ask a Question*/
-section.hours p a {
-  background-color: #666;
-  text-decoration: none;
-
-  color: #fff;
-  padding: .5em .75em;
-  border-radius: 4px;
-}
-/*Ask a Question Hover State*/
-section.hours p a:hover {
-  background-color: #000;
-}
-
-/*Location*/
-
+/*Location Work*/
 section.location {
   background-color: grey;
   padding: 1em;
@@ -238,6 +188,93 @@ cite {
 }
 
 /*Responsive Design Implementations (hamburger and hover)*/
+  /*Header Hover State*/
+header nav a:hover {
+  background-color: #000;
+}
+
+  /*Ask a Question Box and Hover State*/
+section.hours p a {
+  background-color: #666;
+  text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
+}
+
+section.hours p a:hover {
+  background-color: #000;
+}
+
+  /*Location Box and HoverState*/
+section.location p a {
+  background-color: #666;
+  text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
+}
+
+section.location p a:hover {
+  background-color: #000;
+}
+
+  /*Toggle Hamburger*/
+header {
+  position: relative;
+  padding: 1em 0 40px;
+}
+
+header ul {
+  display: none;
+
+}
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ ul {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 40px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+label img {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ label {
+  background-color: green;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ label .nav-close {
+  display: block;
+}
+
+
+
+
 
 /*Media Query Adjustments*/
 @media only screen and (min-width: 25em) {
