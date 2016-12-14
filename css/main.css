@@ -4,7 +4,7 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-/*1.All Page Work*/
+/* 1.All Page Work */
 
 html {
   box-sizing: border-box;
@@ -24,7 +24,8 @@ body {
   margin: 0;
 }
 
-/* 1.Header Work*/
+/* 1.Header Work */
+
 header {
   border-width: 5px;
   background-color: limegreen;
@@ -61,11 +62,12 @@ header nav a {
   border-radius: 4px;
 }
 
-/*1.Main Banner Work*/
+/* 1.Main Banner Work */
+
 section.banner {
- background-color: brown;
- padding: 1em 0;
- margin: 0;
+  background-color: brown;
+  padding: 1em 0;
+  margin: 0;
 }
 
 section.specials {
@@ -78,11 +80,13 @@ section.specials h2 {
   background-color: blue;
   display: block;
 }
+
 section.specials p {
   background-color: blue;
 }
 
-/*1.Menu Work*/
+/* 1.Menu Work */
+
 section.menu {
   background-color: grey;
   padding: 0 1em;
@@ -96,12 +100,13 @@ section.menu p {
   background-color: purple;
 }
 
-/*1.Hours Work*/
+/* 1.Hours Work */
+
 section.hours {
   background-color: grey;
   padding: 1em;
-
 }
+
 section.hours h2 {
   background-color: red;
 }
@@ -110,11 +115,13 @@ section.hours p {
   background-color: red;
 }
 
-/*1.Location Work*/
+/* 1.Location Work */
+
 section.location {
   background-color: grey;
   padding: 1em;
 }
+
 section.location h2 {
   background-color: red;
 }
@@ -123,7 +130,8 @@ section.location p {
   background-color: blue;
 }
 
-/*1.Feedback Section Work*/
+/* 1.Feedback Section Work */
+
 blockquote {
   margin: 0;
   padding: 0;
@@ -146,13 +154,15 @@ cite {
   background-color: orange;
 }
 
-/*1.Footer Work*/
+/* 1.Footer Work */
+
 .copyright {
   background-color: orange;
   padding: .1em 1em;
 }
 
-/*1.Images*/
+/* 1.Images */
+
 .banner-picture {
   width: 100%;
   display: inline-block;
@@ -187,13 +197,15 @@ cite {
   margin-right: auto;
 }
 
-/*2.Responsive Design Implementations (hamburger and hover)*/
-  /*2.Header Hover State*/
+/* 2.Responsive Design Implementations (hamburger and hover) */
+/* 2.Header Hover State */
+
 header nav a:hover {
   background-color: #000;
 }
 
-  /*2.Ask a Question Box and Hover State*/
+/* 2.Ask a Question Box and Hover State */
+
 section.hours p a {
   background-color: #666;
   text-decoration: none;
@@ -207,7 +219,8 @@ section.hours p a:hover {
   background-color: #000;
 }
 
-  /*2.Location Box and HoverState*/
+/* 2.Location Box and HoverState */
+
 section.location p a {
   background-color: #666;
   text-decoration: none;
@@ -221,7 +234,8 @@ section.location p a:hover {
   background-color: #000;
 }
 
-  /*2.Toggle Hamburger*/
+/* 2.Toggle Hamburger */
+
 header {
   position: relative;
   padding: 1em 0 40px;
@@ -229,8 +243,8 @@ header {
 
 header ul {
   display: none;
-
 }
+
 .nav-check {
   position: absolute;
   top: -3em;
@@ -272,9 +286,11 @@ label img {
   display: block;
 }
 
-/*3.Media Query Adjustments*/
+/* 3.Media Query Adjustments */
 
-@media only screen and (min-width: 25em) /*Media 400*/ {
+/* Media 400 */
+
+@media only screen and (min-width: 25em) {
 
   html {
     font-size: 100%;
@@ -301,7 +317,9 @@ label img {
   }
 }
 
-@media only screen and (min-width: 38em) /*Media 608*/ {
+/* Media 608 */
+
+@media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
@@ -384,7 +402,7 @@ label img {
     background-color: orange;
   }
 
-/*3.Images*/
+  /* 3.Images */
 
   .menu-picture {
     width: 10%;
@@ -396,8 +414,9 @@ label img {
     float: left;
     text-align: center;
   }
+
   .hours-picture:nth-child(2) {
-      float:right;
+    float: right;
   }
 
   .location-picture {
@@ -412,14 +431,19 @@ label img {
   }
 }
 
-@media only screen and (min-width: 60em) /*Media 960*/ {
+/* Media 960 */
+
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
     line-height: 1.5;
   }
+}
 
-@media only screen and (min-width: 90em) /*Media 1440*/ {
+/* Media 1440 */
+
+@media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
