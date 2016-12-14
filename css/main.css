@@ -13,11 +13,15 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-family: sans-serif;
-  margin: 0;
+  font: normal 100%/1.5 Georgia, serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 /* Header Work*/
@@ -25,6 +29,8 @@ header {
   border-width: 5px;
   background-color: limegreen;
   text-align: center;
+  margin: 0;
+
 }
 
 header h1 {
@@ -37,18 +43,31 @@ header nav {
   background-color: pink;
 }
 
+header ul {
+  display: inline-block;
+  padding: 0;
+}
+
 header li {
   display: inline-block;
-  background-color: orange;
-  padding: .5em;
+  background-color: blue;
 }
 
 header nav a {
-  background-color: yellow;
-  margin: 2em;
-
+  background-color: #666;
   text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
 }
+
+/*Header Hover State*/
+header nav a:hover {
+  background-color: #000;
+}
+
+/*Toggle Hamburger*/
 
 /*Main Banner Work*/
 section.banner {
@@ -88,7 +107,7 @@ section.menu p {
 /*Hours*/
 section.hours {
   background-color: grey;
-  padding: 0 1em;
+  padding: 1em;
 
 }
 section.hours h2 {
@@ -99,11 +118,25 @@ section.hours p {
   background-color: red;
 }
 
+/*Ask a Question*/
+section.hours p a {
+  background-color: #666;
+  text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
+}
+/*Ask a Question Hover State*/
+section.hours p a:hover {
+  background-color: #000;
+}
+
 /*Location*/
 
 section.location {
   background-color: grey;
-  padding: 0 1em;
+  padding: 1em;
 }
 section.location h2 {
   background-color: red;
@@ -121,7 +154,7 @@ blockquote {
 
 section.feedback {
   background-color: grey;
-  padding: .5em 1em;
+  padding: 1em;
 }
 
 section.feedback h2 {
@@ -205,10 +238,6 @@ cite {
     background-color: purple;
     width: 70%;
   }
-
-
-
-
 }
 
 @media only screen and (min-width: 38em) {
@@ -217,10 +246,7 @@ cite {
     font-size: 110%;
     line-height: 1.4;
   }
-  .menu-picture {
-    display: inline-block;
-    width: 10%;
-  }
+
 }
 @media only screen and (min-width: 60em) {
 
