@@ -4,9 +4,7 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-/*
-All Page Work
-*/
+/*All Page Work*/
 
 html {
   box-sizing: border-box;
@@ -16,32 +14,33 @@ html {
   text-size-adjust: 100%;
   font-family: sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-/*
-Header Work
-*/
-
+/* Header Work*/
 header {
   border-width: 5px;
   background-color: limegreen;
+  text-align: center;
+}
+
+header h1 {
+  display: inline-block;
+  background-color: purple;
+}
+
+header nav {
+  display: inline-block;
+  background-color: pink;
 }
 
 header li {
   display: inline-block;
   background-color: orange;
-}
-
-header nav {
-  position: relative;
-  display: inline-block;
-  background-color: pink;
-  margin-top: 1em;
+  padding: .5em;
 }
 
 header nav a {
@@ -51,17 +50,17 @@ header nav a {
   text-decoration: none;
 }
 
-header h1 {
-  float: left;
-  display: inline-block;
-  background-color: purple;
-}
-
-/*
-Main Banner Work
-*/
+/*Main Banner Work*/
 section.banner {
  background-color: brown;
+ padding: 0;
+ margin: 0;
+}
+
+section.specials {
+  background-color: grey;
+  margin: 0;
+  padding: 1 1em;
 }
 
 section.specials h2 {
@@ -73,44 +72,112 @@ section.specials p {
 }
 
 /*Menu*/
-section.menu-items h2 {
+section.menu {
+  padding: 0 1em;
+}
+
+section.menu h2 {
   background-color: green;
 }
 
-section.menu-items p {
+section.menu p {
   background-color: purple;
 }
 
 /*Hours*/
+section.hours {
+  background: blue;
+  padding: 0 1em;
+
+}
 section.hours h2 {
-  background-color: pink;
+  background-color: red;
 }
 
 section.hours p {
-  background-color: yellow;
+  background-color: red;
 }
 
 /*Location*/
+
+section.location {
+  padding: 0 1em;
+}
 section.location h2 {
   background-color: red;
 }
 
+section.location p {
+  background-color: blue;
+}
+
 /*Feedback Section Work*/
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
 section.feedback {
   background-color: grey;
+  padding: .5em 1em;
+}
+
+section.feedback h2 {
+  background-color: yellow;
+}
+
+section.feedback p {
+  background-color: yellow;
+}
+
+cite {
+  background-color: orange;
 }
 
 /*Footer Work*/
-footer {
+.copyright {
+  background-color: orange;
+  padding: 1em;
 }
 
 /*Images*/
 .banner-picture {
-  width: 40em;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.menu-picture {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hours-picture {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.location-picture {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-picture {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Responsive Design Implementations (hamburger and hover)*/
+
+/*Media Query Adjustments*/
 @media only screen and (min-width: 25em) {
 
   html {
@@ -118,27 +185,49 @@ footer {
     line-height: 1.3;
   }
 
+  .menu-picture {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin-right: 1em;
+    margin-top: 3em;
+  }
+
+  section.menu h2 {
+    display: inline-block;
+    background-color: green;
+  }
+
+  section.menu p {
+    display: inline-block;
+    background-color: purple;
+    width: 70%;
+  }
+
+
+
+
 }
 
 @media only screen and (min-width: 38em) {
 
-    html {
-      font-size: 110%;
-      line-height: 1.4;
-    }
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 }
 @media only screen and (min-width: 60em) {
 
-    html {
-      font-size: 120%;
-      line-height: 1.5;
-    }
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
 }
 
 @media only screen and (min-width: 90em) {
 
-    html {
-      font-size: 130%;
-      line-height: 1.5;
-    }
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 }
