@@ -272,10 +272,6 @@ label img {
   display: block;
 }
 
-
-
-
-
 /*Media Query Adjustments*/
 @media only screen and (min-width: 25em) {
 
@@ -345,6 +341,73 @@ label img {
     float: none;
   }
 
+  .hours-picture {
+    width: 10%;
+    float: left;
+    text-align: center;
+  }
+  .hours-picture:nth-child(2) {
+    float:right;
+  }
+
+  section.hours h2 {
+    background-color: red;
+    padding: 0 1em;
+  }
+
+  section.hours p a {
+    margin: 5em;
+  }
+
+  .location-picture {
+    width: 50%;
+  }
+
+  section.location {
+    max-width: 40em;
+    margin: auto;
+    padding: 1em;
+  }
+
+  section.location h2 {
+    margin: 0 6.5em;
+  }
+
+  section.location p {
+    margin: 0 9.8em;
+    padding: 1em 0;
+  }
+
+  section.location p a {
+    margin: 1em 0;
+  }
+
+  .feedback-picture {
+    width: 20%;
+    display: inline-block;
+    float: left;
+    margin-right: 1em;
+  }
+
+  section.feedback {
+    padding: 2em 0 3em;
+  }
+
+  section.feedback h2 {
+    background-color: yellow;
+    margin-left: 1em;
+  }
+
+  section.feedback p {
+    background-color: yellow;
+    max-width: 30em;
+    display: inline-block;
+    padding-top: 1.2em;
+  }
+
+  cite {
+    background-color: orange;
+  }
 }
 
 @media only screen and (min-width: 90em) {
