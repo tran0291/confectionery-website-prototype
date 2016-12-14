@@ -68,6 +68,33 @@ header nav a:hover {
 }
 
 /*Toggle Hamburger*/
+header ul {
+  display: none;
+}
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ ul {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 40px;
+}
+
+label img {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ label {
+  background-color: green;
+}
 
 /*Main Banner Work*/
 section.banner {
