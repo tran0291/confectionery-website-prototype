@@ -12,6 +12,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+
+  -moz-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  -webkit-transition: all 250ms linear
+  transition: all 250ms linear;
   font-family: sans-serif;
   font: normal 100%/1.5 Georgia, serif;
 }
@@ -99,6 +104,7 @@ section.menu h2 {
 
 section.menu p {
   background-color: purple;
+  overflow: hidden;
 }
 
 /* 1.4 Hours Work */
@@ -181,7 +187,6 @@ cite {
 .hours-picture {
   width: 50%;
   float: left;
-  text-align: center;
 }
 
 .location-picture {
@@ -329,10 +334,6 @@ label img {
     line-height: 1.4;
   }
 
-  section.banner {
-    position: relative;
-  }
-
   section.specials {
     position: absolute;
     text-align: center;
@@ -345,24 +346,31 @@ label img {
     color: #fff;
     padding: .5em .75em;
     border-radius: 4px;
-    left: 12em;
-    top: 27em;
+    left: 9em;
+    top: 21em;
+  }
+
+  section.menu p {
+    width: 40%
   }
 
   section.hours h2 {
-    background-color: red;
-    padding: 0 1em;
+    background-color: blue;
+    overflow: hidden;
+    width: 73%;
   }
 
   section.hours p {
-    margin: 1em 4em;
+    width: 73%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   section.hours p a {
-    margin: 0;
   }
 
   section.location {
+    position: relative;
     max-width: 40em;
     margin: auto;
     padding: 1em;
@@ -408,14 +416,18 @@ label img {
   /* 608 Images */
 
   .menu-picture {
-    width: 10%;
     float: none;
+    width: 10%;
+  }
+
+  section.menu {
+
   }
 
   .hours-picture {
     width: 10%;
     float: left;
-    text-align: center;
+    margin-right: 1em;
   }
 
   .hours-picture:nth-child(2) {
@@ -432,6 +444,15 @@ label img {
     float: left;
     margin-right: 1em;
   }
+
+  .nav-open {
+    display: none;
+  }
+
+  header ul {
+    display: inline-block;
+  }
+
 }
 
 /* Media 960 */
