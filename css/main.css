@@ -4,6 +4,10 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+/*
+All Page Work
+*/
+
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -19,32 +23,25 @@ html {
   box-sizing: inherit;
 }
 
-.menu {
-
-}
-
-.banner {
- background-color: brown;
-}
-
-.specials {
-  display: inline-block;
-}
+/*
+Header Work
+*/
 
 header {
   border-width: 5px;
-  border-color: green;
+  border-color: limegreen;
 }
 
 header li {
   display: inline-block;
-  background-color: green;
+  background-color: orange;
 }
 
 header nav {
   position: relative;
   display: inline-block;
   background-color: pink;
+  margin-top: 1em;
 }
 
 header nav a {
@@ -58,17 +55,44 @@ header h1 {
   background-color: purple;
 }
 
-.feedback {
-  background-color: grey;
+/*
+Main Banner Work
+*/
+section.banner {
+ background-color: brown;
 }
-div.specials h2 {
+
+/*
+Main Text Work
+*/
+section.specials h2 {
   background-color: blue;
+  display: inline-block;
 }
-div.location h2 {
+
+/*
+Location Section Work
+*/
+section.location h2 {
   background-color: red;
 }
 
+/*
+Feedback Section Work
+*/
+section.feedback {
+  background-color: grey;
+}
 
+/*
+Footer Work
+*/
+footer {
+
+}
+/*
+Responsive Design Implementations
+*/
 @media only screen and (min-width: 25em) {
 
   html {
