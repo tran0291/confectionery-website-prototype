@@ -338,7 +338,6 @@ label img {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    width: 50%;
     margin-top: -36%;
     text-align: center;
     color: #fff;
@@ -440,6 +439,10 @@ label img {
     display: none;
   }
 
+  .nav-check:checked ~ label .nav-close {
+    display: none;
+  }
+
   header ul {
     display: inline-block;
   }
@@ -459,7 +462,6 @@ label img {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    width: 50%;
     margin-top: -24%;
     text-align: center;
     color: #fff;
@@ -483,7 +485,6 @@ label img {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    width: 50%;
     margin-top: -12%;
     text-align: center;
     color: #fff;
