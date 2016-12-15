@@ -34,7 +34,7 @@ header {
   font-family: 'Abril Fatface', cursive;
   width: 25%
   border-width: 5px;
-  background-color: limegreen;
+  background-color: grey;
   text-align: center;
   margin: 0em;
   position: relative;
@@ -43,13 +43,13 @@ header {
 
 header h1 {
   display: inline-block;
-  background-color: purple;
+  background-color: grey;
   margin-left: 1em;
 }
 
 header nav {
   display: inline-block;
-  background-color: pink;
+  background-color: grey;
 }
 
 header ul {
@@ -59,7 +59,7 @@ header ul {
 
 header li {
   display: inline-block;
-  background-color: blue;
+  background-color: grey;
 }
 
 header nav a {
@@ -75,7 +75,7 @@ header nav a {
 /* 1.2 Main Banner Work */
 
 section.banner {
-  background-color: brown;
+  background-color: grey;
   padding: 1em 0;
   margin: 0;
 }
@@ -87,47 +87,34 @@ section.specials {
 }
 
 section.specials h2 {
-  background-color: blue;
   display: block;
   font-family: 'Chewy', cursive;
-}
-
-section.specials p {
-  background-color: blue;
 }
 
 /* 1.3 Menu Work */
 
 section.menu {
-  background-color: grey;
   padding: 0 1em;
 }
 
 section.menu h2 {
-  background-color: green;
   font-family: 'Chewy', cursive;
 }
 
 section.menu p {
-  background-color: purple;
   overflow: hidden;
 }
 
 /* 1.4 Hours Work */
 
 section.hours {
-  background-color: grey;
   padding: 1em;
 }
 
 section.hours h2 {
-  background-color: red;
   font-family: 'Chewy', cursive;
 }
 
-section.hours p {
-  background-color: red;
-}
 
 /* 1.5 Location Work */
 
@@ -137,12 +124,7 @@ section.location {
 }
 
 section.location h2 {
-  background-color: red;
   font-family: 'Chewy', cursive;
-}
-
-section.location p {
-  background-color: blue;
 }
 
 /* 1.6 Feedback Section Work */
@@ -158,22 +140,12 @@ section.feedback {
 }
 
 section.feedback h2 {
-  background-color: yellow;
   font-family: 'Chewy', cursive;
-}
-
-section.feedback p {
-  background-color: yellow;
-}
-
-cite {
-  background-color: orange;
 }
 
 /* 1.7 Footer Work */
 
 .copyright {
-  background-color: orange;
   padding: .1em 1em;
 }
 
@@ -191,6 +163,7 @@ cite {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
 }
 
 .hours-picture {
@@ -243,12 +216,16 @@ section.location p a {
 
 /* 2.4 Hover States */
 
+.view-more:hover {
+  background-color: #00f;
+}
+
 section.hours p a:hover {
-  background-color: #000;
+  background-color: #00f;
 }
 
 section.location p a:hover {
-  background-color: #000;
+  background-color: #00f;
 }
 
 /* 2.5 Toggle Hamburger */
@@ -279,7 +256,7 @@ label img {
 }
 
 .nav-check:checked ~ label {
-  background-color: green;
+  background-color: grey;
 }
 
 .nav-close {
@@ -315,6 +292,10 @@ label img {
     top: 2em;
   }
 
+  header nav a {
+    margin: 1em;
+  }
+
   div.menu-content {
     display: block;
     width: 100%;
@@ -322,12 +303,10 @@ label img {
 
   section.menu h2 {
     display: inline-block;
-    background-color: green;
   }
 
   section.menu p {
     display: inline-block;
-    background-color: purple;
     width: 70%;
   }
 
@@ -375,7 +354,6 @@ label img {
   }
 
   section.hours h2 {
-    background-color: blue;
     overflow: hidden;
     width: 73%;
   }
@@ -388,7 +366,6 @@ label img {
 
   section.location {
     position: relative;
-    max-width: 40em;
     margin: auto;
     padding: 1em;
   }
@@ -415,19 +392,17 @@ label img {
   }
 
   section.feedback h2 {
-    background-color: yellow;
     margin-left: 1em;
   }
 
   section.feedback p {
-    background-color: yellow;
     display: inline-block;
     width: 74%;
     padding-top: 1.2em;
   }
 
   cite {
-    background-color: orange;
+    background-color: grey;
   }
 
   /* 608 Images */
@@ -471,7 +446,6 @@ label img {
   header ul {
     display: inline-block;
   }
-
 }
 
 /* Media 960 */
@@ -488,7 +462,7 @@ label img {
   }
 
   header h1 {
-    background-color: blue;
+    background-color: grey;
     margin: 0;
     padding-top: 0.9em;
     padding: 0 1em 0 1em;
@@ -497,14 +471,13 @@ label img {
 
   header nav {
     display: inline-block;
-    margin-right: 30%;
   }
 
   div.specials-content {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    margin-top: -24%;
+    margin-top: -28%;
     text-align: center;
     color: #fff;
     border-radius: 4px;
@@ -534,5 +507,4 @@ label img {
     z-index: 10;
     background-color: #666;
   }
-
 }
