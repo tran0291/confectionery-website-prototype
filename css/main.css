@@ -15,9 +15,8 @@ html {
 
   -moz-transition: all 250ms linear;
   -o-transition: all 250ms linear;
-  -webkit-transition: all 250ms linear
+  -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
-  font-family: sans-serif;
   font: normal 100%/1.5 Georgia, serif;
 }
 
@@ -36,11 +35,14 @@ header {
   background-color: limegreen;
   text-align: center;
   margin: 0;
+  position: relative;
+  padding: 1em 0 40px;
 }
 
 header h1 {
   display: inline-block;
   background-color: purple;
+  float: left;
 }
 
 header nav {
@@ -49,7 +51,7 @@ header nav {
 }
 
 header ul {
-  display: inline-block;
+  display: none;
   padding: 0;
 }
 
@@ -210,7 +212,7 @@ header nav a:hover {
   background-color: #00f;
 }
 
-/* 2.2 Ask a Question Box and Hover State */
+/* 2.2 Ask a Question Box */
 
 section.hours p a {
   background-color: #666;
@@ -221,11 +223,7 @@ section.hours p a {
   border-radius: 4px;
 }
 
-section.hours p a:hover {
-  background-color: #000;
-}
-
-/* 2.3 Location Box and HoverState */
+/* 2.3 Location Box */
 
 section.location p a {
   background-color: #666;
@@ -236,20 +234,17 @@ section.location p a {
   border-radius: 4px;
 }
 
+/* 2.4 Hover States */
+
+section.hours p a:hover {
+  background-color: #000;
+}
+
 section.location p a:hover {
   background-color: #000;
 }
 
-/* 2.4 Toggle Hamburger */
-
-header {
-  position: relative;
-  padding: 1em 0 40px;
-}
-
-header ul {
-  display: none;
-}
+/* 2.5 Toggle Hamburger */
 
 .nav-check {
   position: absolute;
@@ -303,6 +298,11 @@ label img {
     line-height: 1.3;
   }
 
+  div.menu-content {
+    display: block;
+    width: 100%;
+  }
+
   section.menu h2 {
     display: inline-block;
     background-color: green;
@@ -334,24 +334,22 @@ label img {
     line-height: 1.4;
   }
 
-  section.specials {
-    position: absolute;
-    text-align: center;
-    font-size: 1em;
+  div.specials-content {
     width: 50%;
-
-    background-color: #666;
-    text-decoration: none;
-
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    margin-top: -36%;
+    text-align: center;
     color: #fff;
-    padding: .5em .75em;
     border-radius: 4px;
-    left: 9em;
-    top: 21em;
+    z-index: 10;
+    background-color: #666;
   }
 
-  section.menu p {
-    width: 40%
+  div.menu-content {
+    display: inline-block;
+    width: 33%;
   }
 
   section.hours h2 {
@@ -364,9 +362,6 @@ label img {
     width: 73%;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  section.hours p a {
   }
 
   section.location {
@@ -420,10 +415,6 @@ label img {
     width: 10%;
   }
 
-  section.menu {
-
-  }
-
   .hours-picture {
     width: 10%;
     float: left;
@@ -463,6 +454,20 @@ label img {
     font-size: 120%;
     line-height: 1.5;
   }
+
+  div.specials-content {
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    margin-top: -24%;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 10;
+    background-color: #666;
+  }
+
 }
 
 /* Media 1440 */
@@ -473,4 +478,18 @@ label img {
     font-size: 130%;
     line-height: 1.5;
   }
+
+  div.specials-content {
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    width: 50%;
+    margin-top: -12%;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 10;
+    background-color: #666;
+  }
+
 }
