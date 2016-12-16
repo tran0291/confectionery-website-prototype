@@ -18,6 +18,7 @@ html {
   -webkit-transition: all 250ms linear;
   transition: all 250ms linear;
   font: normal 100%/1.5 Georgia, serif;
+  min-width: 20em;
 }
 
 *, *::before, *::after {
@@ -92,11 +93,12 @@ section.specials h2 {
 /* 1.3 Menu Work */
 
 section.menu {
-  padding: 0 1em;
+  padding: 2em 2em;
 }
 
 section.menu h2 {
   font-family: Chewy, cursive;
+  margin-bottom: -0.5em;
 }
 
 section.menu p {
@@ -160,7 +162,7 @@ section.feedback h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
+  margin-top: .5em;
 }
 
 .hours-picture {
@@ -173,6 +175,7 @@ section.feedback h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
 }
 
 .feedback-picture {
@@ -189,6 +192,22 @@ header nav a:hover {
   background-color: #00f;
 }
 
+/*See Our Menu*/
+div.menu-button {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+div.menu-button p a{
+  background-color: #666;
+  text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
+}
+
 /* 2.2 Ask a Question Box */
 
 section.hours p a {
@@ -198,6 +217,18 @@ section.hours p a {
   color: #fff;
   padding: .5em .75em;
   border-radius: 4px;
+}
+
+/*See Our Feedback*/
+section.feedback p a {
+  background-color: #666;
+  text-decoration: none;
+
+  color: #fff;
+  padding: .5em .75em;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 1em;
 }
 
 /* 2.3 Location Box */
@@ -225,6 +256,14 @@ section.location p a:hover {
   background-color: #00f;
 }
 
+div.menu-button p a:hover {
+  background-color: #00f;
+}
+
+section.feedback p a:hover {
+  background-color: #00f;
+}
+
 /* 2.5 Toggle Hamburger */
 
 .nav-check {
@@ -241,10 +280,9 @@ label {
   font-size: 1.25rem;
   display: inline-block;
   width: 40px;
-
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 5em;
 }
 
 label img {
@@ -293,13 +331,19 @@ label img {
     margin: 1em;
   }
 
+  section.menu {
+    text-align: left;
+  }
+
   div.menu-content {
     display: block;
     width: 100%;
+    padding-bottom: 2em;
   }
 
   section.menu h2 {
     display: inline-block;
+    margin-top: 0;
   }
 
   section.menu p {
@@ -314,7 +358,7 @@ label img {
     width: 20%;
     float: left;
     margin-right: 1em;
-    margin-top: 3em;
+    margin-top: 0;
   }
 }
 
@@ -335,12 +379,17 @@ label img {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    margin-top: -36%;
+    margin-top: -40%;
     text-align: center;
     color: #fff;
     border-radius: 4px;
     z-index: 10;
     background-color: #666;
+    padding: 0 1em;
+  }
+
+  section.menu {
+    text-align: center;
   }
 
   div.menu-content {
@@ -348,11 +397,14 @@ label img {
     display: inline-block;
     width: 32%;
     text-align: center;
+    max-width: 20em;
   }
 
   section.hours h2 {
     overflow: hidden;
     width: 73%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   section.hours p {
@@ -381,21 +433,25 @@ label img {
   }
 
   blockquote {
-    margin: 1em;
+    margin: .5em;
   }
 
   section.feedback {
-    padding: 2em 0 3em;
+    padding: .5em 0 5em;
   }
 
   section.feedback h2 {
     margin-left: 1em;
   }
 
-  section.feedback p {
+  section.feedback blockquote {
     display: inline-block;
-    width: 74%;
-    padding-top: 1.2em;
+    width: 70%;
+    margin-top: .5em;
+  }
+
+  section.feedback p {
+    margin-top: 0;
   }
 
   cite {
@@ -423,13 +479,16 @@ label img {
   .location-picture {
     padding-bottom: 1em;
     width: 50%;
+
   }
 
   .feedback-picture {
     width: 20%;
     display: inline-block;
     float: left;
-    margin-right: 1em;
+    margin-right: 0.5em;
+    margin-left: 1em;
+    max-height: 10em;
   }
 
   .nav-open {
@@ -496,11 +555,21 @@ label img {
     width: 50%;
     margin-left: 25%;
     position: absolute;
-    margin-top: -12%;
     text-align: center;
     color: #fff;
     border-radius: 4px;
     z-index: 10;
     background-color: #666;
+    padding: 0 2em;
+  }
+
+  .location-content {
+    margin-left: 25%;
+    max-width: 50%;
+  }
+
+  .hours-content {
+    margin-left: 25%;
+    max-width: 50%;
   }
 }
